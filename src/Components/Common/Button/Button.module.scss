@@ -1,0 +1,29 @@
+@import '../../../Assets/styles/varibles';
+
+.btn {
+  display: block;
+  width: fit-content;
+  padding: 15px 30px;
+  font-family: $font-family-main;
+  font-weight: 500;
+	line-height: 1.3125;
+  @include adaptiv-custom-font(16, 12, 1440, 320);
+  color: $color-white;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 3px solid $color-white;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

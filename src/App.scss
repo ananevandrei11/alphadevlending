@@ -1,0 +1,36 @@
+@import './Assets/styles/varibles';
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body * {
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+.page {
+	position: relative;
+	background-color: #060606;
+	background: url('./Assets/image/bg_face.jpg') center / cover no-repeat;
+}
+
+.container {
+	max-width: 1090px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.text {
+	font-family: $font-family-main;
+	font-weight: 200;
+	font-size: 16px;
+	line-height: 1.3125;
+	@include adaptiv-custom-font(16, 12, 1440, 320);
+	color: $color-main;
+}

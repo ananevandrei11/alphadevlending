@@ -1,0 +1,26 @@
+@import '../../../Assets/styles/varibles';
+.link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 36px;
+	height: 36px;
+	border: 3px solid $color-purple;
+
+	@media (hover: hover) {
+		&:hover {
+			opacity: .5;
+		}
+	}
+
+	@media (hover: none) {
+		&:active {
+			opacity: .5;
+		}
+	}
+}
+
+.link svg {
+	width: 20px;
+	height: 20px;
+}

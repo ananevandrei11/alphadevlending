@@ -1,0 +1,14 @@
+$color-main: #C2BCD2;
+$color-white: #fff;
+$color-purple: #534878;
+
+$font-family-main:  'JetBrains Mono', monospace;
+$font-family-title:  'IBM Plex Mono', monospace;
+
+@mixin adaptiv-custom-font($maxSize, $minSize, $maxScreen, $minScreen) {
+  $addSize: $maxSize - $minSize;
+	$diffScreen: $maxScreen - $minScreen;
+  font-size: calc(
+    #{$minSize + px} + #{$addSize} * ((100vw - #{$minScreen + px}) / #{$diffScreen})
+  );
+}

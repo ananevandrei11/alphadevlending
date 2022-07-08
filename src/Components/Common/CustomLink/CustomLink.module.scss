@@ -1,0 +1,27 @@
+@import '../../../Assets/styles/varibles';
+
+.item {
+  width: fit-content;
+}
+
+.link {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: $color-purple;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      border-color: $color-purple;
+    }
+  }
+}
+
+.active {
+	border-color: $color-purple;
+}
